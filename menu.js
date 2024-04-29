@@ -37,11 +37,11 @@ do {
   console.log("|  Bem vindo ao Auto Peças e Serviços!  |");
   console.log("=========================================");
   console.log("=========================================") 
-  console.log("|\t1. Menu de Login\t\t\t|")
-  console.log("|\t2. Menu de Cliente\t\t|")
-  console.log("|\t3. Menu de Produto\t\t|");
-  console.log("|\t4. Menu de Serviço\t\t|");
-  console.log("|\t5. Menu de Pedido\t\t|");
+  console.log("|\t1. Acesso Administrador\t\t|")
+  console.log("|\t2. Cadastrar Cliente\t\t|")
+  console.log("|\t3. Cadastrar Produto\t\t|");
+  console.log("|\t4. Cadastrar Serviço\t\t|");
+  console.log("|\t5. Cadastrar Venda\t\t|");
   console.log("|\t0. Sair do sistema\t\t|");
   console.log("=========================================")
 
@@ -52,11 +52,11 @@ do {
         do {
             console.clear();
             console.log("=========================================");
-            console.log("|    FAÇA SEU LOGIN OU CADASTRE-SE      |");
+            console.log("|   ACESSE O SISTEMA OU CADASTRE-SE     |");
             console.log("=========================================");
             console.log("=========================================") 
-            console.log("|\t1. Cadastre-se\t\t\t|")
-            console.log("|\t2. Faça seu Login\t\t|")
+            console.log("|\t1. Cadastrar Novo Administrador\t|")
+            console.log("|\t2. Acesse o Sistema\t\t|")
             console.log("|\t0. Voltar ao Menu Principal\t|");
             console.log("=========================================")
           
@@ -64,12 +64,12 @@ do {
           
             switch (op2) {
               case 1:
-                console.log("CADASTRANDO NOVO CLIENTE...");
+                console.log("CADASTRANDO NOVO ADMINISTRADOR...");
                 nome = readline.question("Nome: ");
                 sobrenome = readline.question("Sobrenome: ");
                 login = readline.question("login: ");
                 senha = readline.question("Senha: ");
-                console.log(`Cliente ${nome} ${sobrenome} cadastrado com sucesso!`);
+                console.log(`Administrador ${nome} ${sobrenome} cadastrado com sucesso!`);
                 readline.question("Pressione ENTER para continuar...");
                 break;
               case 2:
@@ -93,7 +93,7 @@ do {
         do {
             console.clear();
             console.log("=========================================");
-            console.log("|            MENU DE CLIENTE            |");
+            console.log("|            CADASTRAR CLIENTE            |");
             console.log("=========================================");
             console.log("|\t\t\t\t\t|");
             console.log("|\t1. Cadastrar novo cliente\t|");
@@ -155,7 +155,7 @@ do {
         do {
             console.clear();
             console.log("=========================================");
-            console.log("|            MENU DE PRODUTO            |");
+            console.log("|            CADASTRAR PRODUTO            |");
             console.log("=========================================");
             console.log("|\t\t\t\t\t|");
             console.log("|\t1. Cadastrar novo Produto\t|");
@@ -213,7 +213,7 @@ do {
         do {
             console.clear();
             console.log("=========================================");
-            console.log("|            MENU DE SERVIÇO            |");
+            console.log("|            CADASTRAR SERVIÇO            |");
             console.log("=========================================");
             console.log("|\t\t\t\t\t|");
             console.log("|\t1. Cadastrar novo Serviço\t|");
@@ -269,7 +269,7 @@ do {
       do {
         console.clear();
         console.log("=========================================");
-        console.log("|             Menu de Pedido            |");
+        console.log("|             CADASTRAR VENDA           |");
         console.log("=========================================");
         console.log("|\t\t\t\t\t|");
         console.log("|\t1. Escolher Produto\t\t|");
@@ -380,10 +380,10 @@ do {
                   } while (op_produto !== 0);
               break;
             case 3:  
-            console.log("AGENDE SEU SERVIÇO...");
+            console.log("AGENDE O SERVIÇO...");
             data_agendamento = readline.question("DATAS DISPONÍVEIS: 20/05  21/05  22/05: ");
             hora_agendamento = readline.question("HORAS DISPONÍVEIS: 9:00  10:20  14:30  16:00: ");
-            console.log(`Serviço agendado na data ${data_agendamento } ás ${hora_agendamento}, tolerância de 10 min!`);
+            console.log(`Serviço agendado na data ${data_agendamento } ás ${hora_agendamento}, informar sobre tolerância de 10 min!`);
             readline.question("Pressione ENTER para continuar...");
             break;
             case 4: 
