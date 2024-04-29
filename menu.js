@@ -8,7 +8,7 @@ var op5;
 var op6;
 var nome = "";
 var sobrenome = "";
-var CPF = "";
+var cpf = "";
 var email = "";
 var login = "";
 var senha = "";
@@ -30,6 +30,19 @@ var data_cartao
 var cvv
 var nome_cartao
 var parcelamento
+
+console.log("=============================================");
+console.log("|     *** Loja de Autopeças online  ***     |");
+console.log("=============================================");
+console.log("|                                           |");
+console.log("|             Login: admin                  |");
+console.log("|             Senha: admin                  |");
+console.log("|                                           |");
+console.log("|                                           |");
+console.log("=============================================");
+
+login = parseInt(readline.question("Login: "));
+senha = parseInt(readline.question("Senha: "));
 
 do {
   console.clear();
@@ -55,8 +68,8 @@ do {
             console.log("|   ACESSE O SISTEMA OU CADASTRE-SE     |");
             console.log("=========================================");
             console.log("=========================================") 
-            console.log("|\t1. Cadastrar Novo Administrador\t|")
-            console.log("|\t2. Acesse o Sistema\t\t|")
+            console.log("|\t1. Cadastrar Usuário\t\t|")
+            console.log("|\t2. Listar Usuário\t\t|")
             console.log("|\t0. Voltar ao Menu Principal\t|");
             console.log("=========================================")
           
@@ -64,20 +77,16 @@ do {
           
             switch (op2) {
               case 1:
-                console.log("CADASTRANDO NOVO ADMINISTRADOR...");
+                console.log("CADASTRANDO NOVO USUÁRIO...");
                 nome = readline.question("Nome: ");
                 sobrenome = readline.question("Sobrenome: ");
                 login = readline.question("login: ");
                 senha = readline.question("Senha: ");
-                console.log(`Administrador ${nome} ${sobrenome} cadastrado com sucesso!`);
+                console.log(`Usuário ${nome} ${sobrenome} cadastrado com sucesso!`);
                 readline.question("Pressione ENTER para continuar...");
                 break;
               case 2:
-                  console.log("INFORME SEUS DADOS PARA CONTINUAR.");
-                  login = readline.question("Digite seu login: ");
-                  senha = readline.question("Digite sua Senha: ");
-                console.log(`Bem Vindo! ${login}`);
-                readline.question("Pressione ENTER para continuar...");
+                  
                 break;
               case 0:
                 console.log("Voltando ao menu principal...");
